@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.centeredContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: large;
+    /* Adjust the font size as needed */
+    font-family: 'Helvetica', sans-serif;
+    /* Set Helvetica as the font */
+}
+
+h1,
+p {
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+h1 {
+    font-size: 2em;
+    /* Adjust the size for 'Reference' */
+}
+
+p {
+    font-size: 1em;
+    /* Adjust the size for 'Andrew Hull Charlie Dixon' */
+}
