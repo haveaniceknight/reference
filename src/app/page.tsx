@@ -1,13 +1,5 @@
-// import Image from "next/image";
-
-// export default function Home() {
-//   return (
-//     <main className=""> Reference
-//     </main>
-//   );
-// }
 import Image from "next/image";
-import Paragraph from "./components/ui/paragraph";
+import Paragraph from "@/components/ui/paragraph";
 
 export default function Home() {
   return (

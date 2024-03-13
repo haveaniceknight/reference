@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes, forwardRef } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
-import { cn } from '@/app/lib/utils';
+import { cn } from '@/lib/utils';
 
 interface ParagraphProps {
 }
@@ -23,10 +23,12 @@ interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement>, VariantPr
 const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(({
   className, size, children, ...props
 }, ref) => {
-  return <p ref={ref} {...props} className={cn(paragraphVariants({ size, className })
-  )}>
-    {children}
-  </p>
+  return (
+    <p ref={ref} {...props} className={cn(paragraphVariants({ size, className })
+    )}>
+      {children}
+    </p>
+  )
 })
 
 Paragraph.displayName = 'Paragraph'
