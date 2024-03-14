@@ -22,8 +22,14 @@ export default function RootLayout({
 
 
       <body className={inter.className = 'min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'}>
-        <Providers>{children}</Providers>
+        <Providers>{children}
+          @ts-expect-error Server Component
+          {/* <NavBar /> */}
 
+
+        </Providers>
+        {/*Allow for more height on mobile devices*/}
+        <div className='h-40 md:hidden' />
       </body>
     </html>
   );
