@@ -3,8 +3,8 @@ import { getServerSession } from 'next-auth'
 import Link from 'next/link'
 import { FC } from 'react'
 import { buttonVariants } from '@/ui/button'
-import  from '@/components/sigin'
-import SignOutButton from '@/components/signout'
+// import  from '@/components/sigin'
+// import SignOutButton from '@/components/signout'
 
 
 const Navbar = async ({ }) => {
@@ -24,21 +24,21 @@ const Navbar = async ({ }) => {
             <Link href='/documentation' className={buttonVariants({ variant: 'ghost' })}>
                 Documentation
             </Link>
-            {session ? (
+            {/* {session ? (
 
                 <>
                     <Link className={buttonVariants({ variant: 'ghost' })} href='/dashboard'>Dashboard
-                    </Link>
-                    <SignOutButton />
+                    </Link> */}
+            {/* <SignOutButton />
                 </>
             ) : (
                 <SignInbutton />
-            )
-            }
+            ) */}
+            {/* } */}
 
         </div>
     </div>
-    </div >
+        // </div >
     )
 }
 
