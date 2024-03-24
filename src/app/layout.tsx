@@ -1,7 +1,9 @@
-import React, { ReactNode } from 'react';
+// layout.tsx
+import React from 'react';
+import Link from 'next/link';
 
 type LayoutProps = {
-    children: ReactNode;
+    children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -10,8 +12,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <header>
                 {/* Header content here */}
             </header>
-            <nav>
-                {/* Navigation links */}
+            <nav className="navigation-bar">
+                <Link href="/now" className="nav-item nav-item--active">now</Link>
+                <Link href="/message" className="nav-item">message</Link>
+                <Link href="/new-post" className="nav-item">new post</Link>
+                <Link href="/profile" className="nav-item">profile</Link>
+                {/* ... other nav items ... */}
             </nav>
             <main>{children}</main>
             <footer>

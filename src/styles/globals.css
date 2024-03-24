@@ -1,31 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
-.centeredContent {
+.navigation-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    font-size: large;
-    /* Adjust the font size as needed */
-    font-family: 'Helvetica', sans-serif;
-    /* Set Helvetica as the font */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background: #FFFFFF;
+    z-index: 1000;
+    gap: 20px;
 }
 
-h1,
-p {
-    font-weight: bold;
-    /* Make the text bold */
+.nav-item {
+    color: #7F7F7F;
+    /* Grey color for the text */
+    font-size: 14px;
+    /* Font size */
+    font-family: 'Inter', sans-serif;
+    /* The Inter font */
+    padding: 10px 16px;
+    /* Padding around the text for better tap targets */
+    display: inline-flex;
+    /* Use inline-flex to center text and pseudo-elements */
+    align-items: center;
+    /* Vertically center */
+    justify-content: center;
+    /* Horizontally center */
+    text-decoration: none;
+    /* No underline */
+    text-transform: lowercase;
+    /* Lowercase text as in the design */
+    position: relative;
+    /* Positioning context for pseudo-elements */
 }
 
-h1 {
-    font-size: 2em;
-    /* Adjust the size for 'Reference' */
+.nav-item:not(.nav-item--active):hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    /* Black color for the underline */
+    position: absolute;
+    bottom: 5px;
+    /* Adjust as needed */
 }
 
-p {
-    font-size: 1em;
-    /* Adjust the size for 'Andrew Hull Charlie Dixon' */
+.nav-item--active::after {
+    content: '';
+    display: block;
+    width: calc(100% - 32px);
+    /* Subtract the total horizontal padding from the width */
+    height: 2px;
+    background-color: #000000;
+    /* Black color for the underline */
+    position: absolute;
+    bottom: 5px;
+    /* Position it 5px above the bottom edge */
+}
+
+/* Ensure links inside nav-items are also not underlined */
+.nav-item a {
+    text-decoration: none;
+    /* This is crucial to remove the underline from links */
 }
