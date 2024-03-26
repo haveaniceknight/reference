@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 
 export const metadata = {
   title: 'Reference',
-  description: 'Created by Charlie Dixon et Andrew Hull',
+  description: 'Created by Charlie Dixon and Andrew Hull',
 }
 const inter = Inter({ subsets: ['latin'] })
 
