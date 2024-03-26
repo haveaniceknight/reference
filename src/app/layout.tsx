@@ -2,7 +2,7 @@ import Navbar from '@/components/ui/Navbar'
 import '@/styles/globals.css'
 import { Inter } from "next/font/google"
 import { cn } from '@/lib/utils'
-import { Toaster } from '@/components/ui/toaster'
+import { Toaster } from '@/components/ui/Toaster'
 
 export const metadata = {
   title: 'Reference',
