@@ -14,11 +14,11 @@ const page: FC<pageProps> = ({ }) => {
             <Link
                 href='/'
                 className={cn(buttonVariants({ variant: 'ghost' }),
-                    'self-start -mt-20')}>Home</Link>
+                    'self-start -mt-20')}></Link>
             <SignIn />
         </div>
 
-        page</div>
+    </div>
 }
 
 export default page
