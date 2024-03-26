@@ -4,7 +4,7 @@ export default function Home() {
       fontFamily: 'Arial, sans-serif',
       maxWidth: '600px',
       margin: 'auto',
-      padding: '50px 20px',
+      padding: '0px 20px',
       backgroundColor: '#fff',
       boxSizing: 'border-box' // Make sure padding doesn't add to the width
     }}>
@@ -37,7 +37,7 @@ export default function Home() {
         gridGap: '10px'
       }}>
         {/* Placeholder for images */}
-        {Array.from({ length: 9 }).map((_, index) => (
+        {Array.from({ length: 18 }).map((_, index) => (
           <div key={index} style={{ backgroundColor: '#eaeaea', paddingTop: '100%', position: 'relative' }}>
             {/* The actual image would go here */}
           </div>
