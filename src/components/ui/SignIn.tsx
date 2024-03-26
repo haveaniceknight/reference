@@ -1,4 +1,5 @@
 import { Icons } from "./Icons"
+import Link from "next/link"
 
 
 const SignIn = () => {
@@ -7,6 +8,12 @@ const SignIn = () => {
             <Icons.logo className='mx-auto h-6 w-6' />
             <h1 className="text-2xl font semibold tracking-tight">Welcome Back</h1>
             <p className="text-sm max-w-xs mx-auto "> By continuing, you are setting up a Reference account and agree to our User Agreement and Privacy Policy. </p>
+            {/* sign in form */}
+            {/* use this style for sign in button */}
+            <p className='px-8 text-center text-sm text-zinc-700'>New to Reference?{' '}
+                <Link href='/sign-up' className='hover:text-zinc-800 text-sm underline underline-offset'>
+                    Sign Up
+                </Link></p>
         </div>
 
 
