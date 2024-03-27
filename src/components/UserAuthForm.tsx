@@ -45,5 +45,4 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
         </div>
     )
 }
-
 export default UserAuthForm
