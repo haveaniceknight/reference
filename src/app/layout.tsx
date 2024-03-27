@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/Toaster'
 
 export const metadata = {
   title: 'Reference',
-  description: 'Created by Charlie Dixon and Andrew Hull',
+  description: '',
 }
 const inter = Inter({ subsets: ['latin'] })
 
