@@ -13,7 +13,7 @@ const page: FC<pageProps> = ({ }) => {
         <div className='h-full max-w-2xl mx-auto flex flex-col items-center justify-center gap-20'>
             <Link
                 href='/'
-                className={cn(buttonVariants({ variant: 'ghost' }),
+                className={cn(buttonVariants({ }),
                     'self-start -mt-20')}></Link>
             <SignIn />
         </div>
