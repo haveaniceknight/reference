@@ -7,7 +7,7 @@ export default function Home() {
       maxWidth: '600px',
       margin: 'auto',
       padding: '0px 20px',
-      backgroundColor: '#fff',
+      backgroundColor: 'white',
       boxSizing: 'border-box' // Make sure padding doesn't add to the width
     }}>
       {/* Profile Section */}
