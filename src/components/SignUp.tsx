@@ -2,6 +2,9 @@ import { Icons } from '@/components/Icons'
 import UserAuthForm from '@/components/UserAuthForm'
 import Link from 'next/link'
 
+
+
+
 const SignUp = () => {
     return (
         <div className='container mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[400px]'>
@@ -11,7 +14,7 @@ const SignUp = () => {
                 <p className='text-sm max-w-xs mx-auto'>
                     By continuing, you are setting up a Breadit account and agree to our
                     User Agreement and Privacy Policy.
-                </p>
+                </p>  
             </div>
             <UserAuthForm />
             <p className='px-8 text-center text-sm text-muted-foreground'>
