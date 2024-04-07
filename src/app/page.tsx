@@ -16,8 +16,8 @@ export default function Home() {
         paddingBottom: '20px',
         marginBottom: '20px'
       }}>
-        <h2 style={{ margin: '0 0 10px 0', color: '#000' }}>@charliedixon</h2>
-        <p style={{ margin: '0', color: '#000' }}>Charlie Dixon</p>
+        <h2 style={{ margin: '0 0 10px 0', color: '#000' }}>@user</h2>
+        <p style={{ margin: '0', color: '#000' }}>User</p>
         <p style={{ margin: '8px 0', color: '#000' }}>Photographer</p>
         <p style={{ margin: '0', color: '#000' }}>Vancouver, British Columbia</p>
         <a
@@ -28,7 +28,7 @@ export default function Home() {
             margin: '8px 0'
           }}
         >
-          charliedixonstudio.com
+          examplestudio.com
         </a>
       </div>
 
